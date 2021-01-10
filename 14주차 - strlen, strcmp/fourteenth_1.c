@@ -3,9 +3,9 @@
 
 int main()
 {
-    char *NickName = "ë§¹ê½ì´";
+    char *NickName = "¸Í²ÇÀÌ";
     int len = strlen(NickName);
-    printf("%dê¸€ì\n", len / 2);
+    printf("%d±ÛÀÚ\n", len / 2);
     for (int i = 0; i < len; i += 2)
     {
         printf("%c%c", NickName[i], NickName[i + 1]);
