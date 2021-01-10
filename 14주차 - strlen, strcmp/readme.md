@@ -1,8 +1,8 @@
 # 14주차
 
-- [기본 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-1%EB%B2%88)(strlen)
-- [기본 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-2%EB%B2%88)(strcmp)
-- [기본 3번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-3%EB%B2%88)(구조체 포인터 배열)
+- [기본 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-1%EB%B2%88-%EB%AA%A9%EC%B0%A8)(strlen)
+- [기본 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-2%EB%B2%88-%EB%AA%A9%EC%B0%A8)(strcmp)
+- [기본 3번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-3%EB%B2%88-%EB%AA%A9%EC%B0%A8)(구조체 포인터 배열)
 - [심화 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-1%EB%B2%88-%EB%AA%A9%EC%B0%A8)()
 - [심화 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-2%EB%B2%88-%EB%AA%A9%EC%B0%A8)(난수)
 
