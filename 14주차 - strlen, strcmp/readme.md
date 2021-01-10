@@ -6,7 +6,7 @@
 - [심화 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-1%EB%B2%88-%EB%AA%A9%EC%B0%A8)()
 - [심화 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-2%EB%B2%88-%EB%AA%A9%EC%B0%A8)(난수)
 
-### 기본 1번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8)
+### 기본 1번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8-%EC%A3%BC%EC%B0%A8-%EB%AA%A9%EB%A1%9D)
 
 1.  문자열 편집을 위해 string.h 를 인클루드 하고 다음 문항에 답하시오. (1시간 소요)
 
@@ -49,7 +49,7 @@
 
     ![](https://user-images.githubusercontent.com/58128948/104117836-bfd3d580-5367-11eb-9b7f-a5cf8260d8dd.png)
 
-### 기본 2번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8)
+### 기본 2번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8-%EC%A3%BC%EC%B0%A8-%EB%AA%A9%EB%A1%9D)
 
 2.  strcmp의 사용방법은 아래와 같다.
 
@@ -150,7 +150,7 @@
 
     ![](https://user-images.githubusercontent.com/58128948/104117853-ded26780-5367-11eb-8055-7220032fcff4.png)
 
-### 기본 3번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8)
+### 기본 3번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8-%EC%A3%BC%EC%B0%A8-%EB%AA%A9%EB%A1%9D)
 
 3.  다음과 같은 원시자료가 있다.
 
@@ -278,7 +278,7 @@
 
     ![](https://user-images.githubusercontent.com/58128948/104117862-ec87ed00-5367-11eb-9533-5870ba0176ae.png)
 
-### 심화 1번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8)
+### 심화 1번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8-%EC%A3%BC%EC%B0%A8-%EB%AA%A9%EB%A1%9D)
 
 1.  주민등록번호 검증 알고리즘을 구현하시오.
 
@@ -404,7 +404,7 @@
 
     ![](https://user-images.githubusercontent.com/58128948/104117875-fc073600-5367-11eb-8600-449429f3ad86.png)
 
-### 심화 2번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8)
+### 심화 2번 [(목차)](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#14%EC%A3%BC%EC%B0%A8-%EC%A3%BC%EC%B0%A8-%EB%AA%A9%EB%A1%9D)
 
 2.  다음과 같은 조건을 만족하는 암호 검증 알고리즘을 만드시오.
 
