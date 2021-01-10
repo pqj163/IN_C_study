@@ -156,17 +156,17 @@
 
         번호  닉네임     ID      PASSWORD
 
-         1      오리     DUCK      dhflrhrl
+         1    오리     DUCK     dhflrhrl
 
-         2      돼지       PIG      ehowlrhrl
+         2    돼지     PIG      ehowlrhrl
 
-         3      토끼   RABBIT    xhRlrhrl
+         3    토끼    RABBIT    xhRlrhrl
 
-         4      새         BIRD       torhrl
+         4     새      BIRD     torhrl
 
-         5      비둘기  PIGEON  qlenfrlrhrl
+         5    비둘기   PIGEON    qlenfrlrhrl
 
-         6      두꺼비   FROG    enRjqlrhrl
+         6    두꺼비    FROG     enRjqlrhrl
 
     이에 따라 아래 문항을 해결하시오. (2시간 소요)
 
