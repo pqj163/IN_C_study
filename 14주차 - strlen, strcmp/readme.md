@@ -1,4 +1,4 @@
-# 14주차 [(주차 목록)](https://github.com/pqj163/IN_C_study#c-%EC%8A%A4%ED%84%B0%EB%94%94)
+# 14주차 [(주차 목록)](https://github.com/pqj163/IN_C_study/blob/master/README.md)
 
 - [기본 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-1%EB%B2%88-%EB%AA%A9%EC%B0%A8)(strlen)
 - [기본 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-2%EB%B2%88-%EB%AA%A9%EC%B0%A8)(strcmp)
