@@ -37,6 +37,7 @@ int main()
     return 0;
 }
 ```
+![](https://user-images.githubusercontent.com/58128948/104117836-bfd3d580-5367-11eb-9b7f-a5cf8260d8dd.png)
   
   
 ### 기본 2번
