@@ -8,7 +8,7 @@
 
 ### 기본 1번
 
-1.  문자열 편집을 위해 string.h 를 인클루드 하고 다음 문항에 답하시오. (1시간 소요)
+1.문자열 편집을 위해 string.h 를 인클루드 하고 다음 문항에 답하시오. (1시간 소요)
 
     가. char\*변수를 만들고 자신의 아이디를 저장해보시오.
 
@@ -49,29 +49,29 @@ int main()
 
 ### 기본 2번
 
-2. strcmp의 사용방법은 아래와 같다.
+2.  strcmp의 사용방법은 아래와 같다.
 
-       두 문자열의 비교값 = strcmp(문자열1 변수명,문자열2 변수명)
+        두 문자열의 비교값 = strcmp(문자열1 변수명,문자열2 변수명)
 
-       두문자가 같으면 0, 다르면 -1또는 1. https://dojang.io/mod/page/view.php?id=346 참조하시오.
+        두문자가 같으면 0, 다르면 -1또는 1. https://dojang.io/mod/page/view.php?id=346 참조하시오.
 
-   이를 암기하시오. 또한 다음 문항을 해결하시오.
+    이를 암기하시오. 또한 다음 문항을 해결하시오.
 
-   단, 버전에 따라 -1또는 1이 먹히지 않을 경우가 있고 그때는 양수 또는 음수가 받아지므로 이를 활용하시오(2시간 소요)
+    단, 버전에 따라 -1또는 1이 먹히지 않을 경우가 있고 그때는 양수 또는 음수가 받아지므로 이를 활용하시오(2시간 소요)
 
-   가. char\* 배열에 다음의 값을 넣으시오. "Apple" "Dog" "Cat" "Banana" "Elephant"
+    가. char\* 배열에 다음의 값을 넣으시오. "Apple" "Dog" "Cat" "Banana" "Elephant"
 
-   나. '가'에서 만든 값을 strcmp값이 1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
+    나. '가'에서 만든 값을 strcmp값이 1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
 
-   결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
+    결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
 
-   다. '가'에서 만든 값을 strcmp값이 -1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
+    다. '가'에서 만든 값을 strcmp값이 -1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
 
-   결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
+    결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
 
-   라. '가'에서 만든 값을 알파벳 역순으로 재배열해보시오. strcmp와 반복문을 이용하시오.
+    라. '가'에서 만든 값을 알파벳 역순으로 재배열해보시오. strcmp와 반복문을 이용하시오.
 
-   결과값은 Elephant, Dog, Cat, Banana, Apple 처럼 되어야 함.
+    결과값은 Elephant, Dog, Cat, Banana, Apple 처럼 되어야 함.
 
 ```C
 #include <stdio.h>
