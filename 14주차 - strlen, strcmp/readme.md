@@ -24,28 +24,28 @@
     라. '나'에서 만든 문자열의 길이와 '다'에서의 문자 한개씩 접근하는 방법을 이용하여 for문으로 아이디를 거꾸로 뒤집어 출력해보시오. 예를들어, 아이디가 apple2 였다면 2elppa 를 출력해야함.
     ```
 
-```C
-#include <stdio.h>
-#include <string.h>
+    ```C
+    #include <stdio.h>
+    #include <string.h>
 
-int main()
-{
-    char *NickName = "맹꽁이";
-    int len = strlen(NickName);
-    printf("%d글자\n", len / 2);
-    for (int i = 0; i < len; i += 2)
+    int main()
     {
-        printf("%c%c", NickName[i], NickName[i + 1]);
+        char *NickName = "맹꽁이";
+        int len = strlen(NickName);
+        printf("%d글자\n", len / 2);
+        for (int i = 0; i < len; i += 2)
+        {
+            printf("%c%c", NickName[i], NickName[i + 1]);
+        }
+        printf("\n");
+        for (int i = 0; i < len; i += 2)
+        {
+            printf("%c%c", NickName[len - (i + 2)], NickName[len - (i + 1)]);
+        }
+        printf("\n");
+        return 0;
     }
-    printf("\n");
-    for (int i = 0; i < len; i += 2)
-    {
-        printf("%c%c", NickName[len - (i + 2)], NickName[len - (i + 1)]);
-    }
-    printf("\n");
-    return 0;
-}
-```
+    ```
 
 ![](https://user-images.githubusercontent.com/58128948/104117836-bfd3d580-5367-11eb-9b7f-a5cf8260d8dd.png)
 
@@ -61,19 +61,19 @@ int main()
 
     단, 버전에 따라 -1또는 1이 먹히지 않을 경우가 있고 그때는 양수 또는 음수가 받아지므로 이를 활용하시오(2시간 소요)
 
-    가. char\* 배열에 다음의 값을 넣으시오. "Apple" "Dog" "Cat" "Banana" "Elephant"
+        가. char\* 배열에 다음의 값을 넣으시오. "Apple" "Dog" "Cat" "Banana" "Elephant"
 
-    나. '가'에서 만든 값을 strcmp값이 1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
+        나. '가'에서 만든 값을 strcmp값이 1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
 
-    결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
+        결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
 
-    다. '가'에서 만든 값을 strcmp값이 -1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
+        다. '가'에서 만든 값을 strcmp값이 -1임을 검사하여 사전식으로 재배열해 보시오. strcmp와 반복문을 이용하시오.
 
-    결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
+        결과값은 Apple, Banana, Cat, Dog, Elephant 처럼 되어야 함.
 
-    라. '가'에서 만든 값을 알파벳 역순으로 재배열해보시오. strcmp와 반복문을 이용하시오.
+        라. '가'에서 만든 값을 알파벳 역순으로 재배열해보시오. strcmp와 반복문을 이용하시오.
 
-    결과값은 Elephant, Dog, Cat, Banana, Apple 처럼 되어야 함.
+        결과값은 Elephant, Dog, Cat, Banana, Apple 처럼 되어야 함.
 
 ```C
 #include <stdio.h>
@@ -173,15 +173,14 @@ void strcmp_valid(char *temp_list[], char *list[], int len, int con)
 
     이에 따라 아래 문항을 해결하시오. (2시간 소요)
 
-    가. 위 자료를 처리하기 위해 배열이나 구조체 등을 이용하여 적절한 자료구조를 만들어 보시오.
+        가. 위 자료를 처리하기 위해 배열이나 구조체 등을 이용하여 적절한 자료구조를 만들어 보시오.
 
-    나. ID와 PASSWORD를 입력받아 위 자료에 있는대로 입력되면,
+        나. ID와 PASSWORD를 입력받아 위 자료에 있는대로 입력되면,
+        "'닉네임'님, 로그인되었습니다."를 출력하시오. 누가 로그인하고 있는지를 판별하기 위해 입력받은 ID와 위 데이터베이스에 있는 ID를 반복문으로 일일이 검사하여야 함. 한편, strcmp를 이용하시오.
 
-    "'닉네임'님, 로그인되었습니다."를 출력하시오. 누가 로그인하고 있는지를 판별하기 위해 입력받은 ID와 위 데이터베이스에 있는 ID를 반복문으로 일일이 검사하여야 함. 한편, strcmp를 이용하시오.
+        다. 입력받은 ID와 일치하는 ID가 없는 경우, "ID가 잘못되었습니다"를 출력하시오. 그리고, ID와 PW를 다시 받을수 있도록 해보시오.
 
-    다. 입력받은 ID와 일치하는 ID가 없는 경우, "ID가 잘못되었습니다"를 출력하시오. 그리고, ID와 PW를 다시 받을수 있도록 해보시오.
-
-    라. 입력받은 ID는 있으나 PW가 일치하지 않는 경우, "PW가 잘못되었습니다"를 출력하시오. 그리고, ID와 PW를 다시 받을수 있도록 해보시오.
+        라. 입력받은 ID는 있으나 PW가 일치하지 않는 경우, "PW가 잘못되었습니다"를 출력하시오. 그리고, ID와 PW를 다시 받을수 있도록 해보시오.
 
 ```C
 #include <stdio.h>
