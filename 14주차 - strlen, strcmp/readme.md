@@ -3,8 +3,8 @@
 - [기본 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-1%EB%B2%88)(strlen)
 - [기본 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-2%EB%B2%88)(strcmp)
 - [기본 3번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EA%B8%B0%EB%B3%B8-3%EB%B2%88)(구조체 포인터 배열)
-- [심화 1번]()()
-- [심화 2번]()(난수)
+- [심화 1번](https://github.com/pqj163/IN_C_study/tree/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen,%20strcmp#%EC%8B%AC%ED%99%94-1%EB%B2%88)()
+- [심화 2번](https://github.com/pqj163/IN_C_study/tree/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp#%EC%8B%AC%ED%99%94-2%EB%B2%88)(난수)
 
 ### 기본 1번
 
@@ -51,9 +51,9 @@ int main()
 
 2. strcmp의 사용방법은 아래와 같다.
 
-   두 문자열의 비교값 = strcmp(문자열1 변수명,문자열2 변수명)
+       두 문자열의 비교값 = strcmp(문자열1 변수명,문자열2 변수명)
 
-   두문자가 같으면 0, 다르면 -1또는 1. https://dojang.io/mod/page/view.php?id=346 참조하시오.
+       두문자가 같으면 0, 다르면 -1또는 1. https://dojang.io/mod/page/view.php?id=346 참조하시오.
 
    이를 암기하시오. 또한 다음 문항을 해결하시오.
 
