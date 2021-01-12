@@ -8,7 +8,7 @@
 - [심화 1번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-1%EB%B2%88-%EB%AA%A9%EC%B0%A8)()
 - [심화 2번](https://github.com/pqj163/IN_C_study/blob/master/14%EC%A3%BC%EC%B0%A8%20-%20strlen%2C%20strcmp/readme.md#%EC%8B%AC%ED%99%94-2%EB%B2%88-%EB%AA%A9%EC%B0%A8)(난수)
 
-### [↑](#과제) 기본 1번
+### [↕](#과제) 기본 1번
 
 1.  문자열 편집을 위해 string.h 를 인클루드 하고 다음 문항에 답하시오. (1시간 소요)
 
