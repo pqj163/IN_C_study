@@ -1,5 +1,5 @@
 # 과제
->  **15주차**   
+> **15주차**   
 [[ 목차 ](https://github.com/pqj163/IN_C_study/blob/master/README.md)]
 
 - [기본 1번](#기본-1번)(strcpy)
