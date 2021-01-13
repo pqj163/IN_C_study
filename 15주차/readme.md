@@ -79,7 +79,35 @@
     마. char형의 배열과, char*형 변수를 선언하고, 배열에는 dhfl를 넣고 포인터변수에는 ehowl를 넣으시오. '라'와 같은 오류가 생기지 않도록 배열의 크기를 고려하시오.
 
     바. 합치면 dhflehowl 가 된다. 이를 strcat로 구현하고, 출력해보시오.
+    ```
 
+    ```C
+    #include <stdio.h>
+    #include <string.h>
+
+    int main()
+    {
+        char a[10] = "dhfl", b[10] = "ehowl";
+        printf("a = %s\nb = %s\n", a, b);
+        strcat(a, b);
+        printf("\nstrcat 후\n");
+        printf("\n");
+        printf("a = %s\nb = %s\n", a, b);
+
+        char c[17] = "dhflrhrl", d[10] = "ehowlrhrl";
+        strcat(c, d);
+        printf("\n%s\n", c);
+
+        char e[10] = "dhfl", *f = "ehowl";
+        strcat(e, f);
+        printf("\n%s\n", e);
+
+        return 0;
+    }
+    ```
+    ![기본 2번 정답](https://user-images.githubusercontent.com/58128948/104405991-97372000-55a1-11eb-8c59-e09beffcf279.PNG)
+
+    ```
     사. 문자열 붙이기를 하려면 char배열 또는 char형으로 선언된 동적 메모리 변수를 이용하면 된다. 이 둘의 장단점을 비교해 보시오.
     ```
 
