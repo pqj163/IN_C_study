@@ -25,7 +25,37 @@
     마. a에는 자신의 아이디를 넣고, b는 비워 두시오.
 
     바. b에 a를 복사하여 넣으시오. 또한, 이를 출력하시오.
+    ```
 
+    ```C
+    #include <stdio.h>
+    #include <string.h>
+    #include <stdlib.h>
+
+    int main()
+    {
+        char *nick = "맹꽁이", *mem = malloc(sizeof(char) * 20);
+
+        printf("nick = %s\nmem = %s\n", nick, mem);
+        strcpy(mem, nick);
+        printf("\nstrcpy 후\n");
+        printf("\n");
+        printf("nick = %s\nmem = %s\n", nick, mem);
+        free(mem);
+
+        char a[10] = "맹꽁이", b[10];
+
+        printf("\n");
+        printf("a = %s\nb = %s\n", a, b);
+        strcpy(b, a);
+        printf("\nstrcpy 후\n\n");
+        printf("a = %s\nb = %s\n", a, b);
+
+        return 0;
+    }
+    ```
+    ![기본 1번 결과](https://user-images.githubusercontent.com/58128948/104403666-5be62280-559c-11eb-8b62-86f6f1c8acbd.PNG)
+    ```
     사. 문자열 복사를 하려면 char배열 또는 char형으로 선언된 동적 메모리 변수를 이용하면 된다. 이 둘의 장단점을 비교해 보시오.
     ```
 
