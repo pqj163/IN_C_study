@@ -105,7 +105,7 @@
         return 0;
     }
     ```
-    ![기본 2번 정답](https://user-images.githubusercontent.com/58128948/104405991-97372000-55a1-11eb-8c59-e09beffcf279.PNG)
+    ![기본 2번 결과](https://user-images.githubusercontent.com/58128948/104405991-97372000-55a1-11eb-8c59-e09beffcf279.PNG)
 
     ```
     사. 문자열 붙이기를 하려면 char배열 또는 char형으로 선언된 동적 메모리 변수를 이용하면 된다. 이 둘의 장단점을 비교해 보시오.
@@ -120,7 +120,57 @@
 
     다. for과 strcat를 이용하여 동물이름과 울음소리를 합쳐보시오. 예를들어, '오리는 꽥꽥'과 같이 출력하시오.
     ```
- 
+
+    ```C
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+
+    int main()
+    {
+        char *animal[4], *cry[4];
+        int i = 0, l = 4;
+
+        for (i; i < l; i++)
+        {
+            if (i == 3)
+                animal[i] = malloc(sizeof(char) * 9);
+            else
+                animal[i] = malloc(sizeof(char) * 11);
+            cry[i] = malloc(sizeof(char) * 4);
+            switch (i)
+            {
+            case 0:
+                strcpy(animal[i], "오리");
+                strcpy(cry[i], "꽥꽥");
+                break;
+            case 1:
+                strcpy(animal[i], "염소");
+                strcpy(cry[i], "음메");
+                break;
+            case 2:
+                strcpy(animal[i], "돼지");
+                strcpy(cry[i], "꿀꿀");
+                break;
+            case 3:
+                strcpy(animal[i], "소");
+                strcpy(cry[i], "음무");
+                break;
+            }
+            strcat(animal[i], "는 ");
+            strcat(animal[i], cry[i]);
+            printf("%s\n", animal[i]);
+        }
+        for (i = 0; i < l; i++)
+        {
+            free(animal[i]);
+            free(cry[i]);
+        }
+
+        return 0;
+    }
+    ```
+    ![심화 1번 결과](https://user-images.githubusercontent.com/58128948/104408647-d23c5200-55a7-11eb-992b-c946d36af015.PNG)
 
  
 ### [⬆](#과제)심화 2번
@@ -159,3 +209,95 @@
 
         예를들어, dhflrhrl@naver.com,ehowlrhrl@naver.com... 처럼 되어야 함. 
     ```
+    ```C
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #define YES 1
+    #define NO 0
+
+    typedef struct _Data
+    {
+        char *id;
+        int blog, mail;
+    } Data;
+
+    int main()
+    {
+        int blogs[6] = {YES, YES, NO, YES, YES, NO}, mails[6] = {YES, NO, YES, NO, YES, YES};
+        char *targetBlog[6], *targetMail[6], blog_linked[200], mail_linked[200];
+        Data *datas[6];
+        for (int i = 0; i < 6; i++)
+        {
+            targetBlog[i] = malloc(sizeof(char) * 31);
+            strcpy(targetBlog[i], "http://blog.naver.com/");
+            targetMail[i] = malloc(sizeof(char) * 19);
+            datas[i] = malloc(sizeof(Data));
+            datas[i]->blog = blogs[i];
+            datas[i]->mail = mails[i];
+            switch (i)
+            {
+            case 0:
+                datas[i]->id = "dhflrhrl";
+                break;
+            case 1:
+                datas[i]->id = "duathrhrl";
+                break;
+            case 2:
+                datas[i]->id = "ehowlrhrl";
+                break;
+            case 3:
+                datas[i]->id = "thrhrl";
+                break;
+            case 4:
+                datas[i]->id = "torhrl";
+                break;
+            case 5:
+                datas[i]->id = "xhrlrhrl";
+                break;
+            }
+            strcat(targetBlog[i], datas[i]->id);
+            strcpy(targetMail[i], datas[i]->id);
+            strcat(targetMail[i], "@naver.com");
+
+            if (datas[i]->blog == NO)
+                targetBlog[i] = NULL;
+            if (datas[i]->mail == NO)
+                targetMail[i] = NULL;
+        }
+        for (int i = 0; i < 6; i++)
+        {
+            printf("%s\n", datas[i]->id);
+            if (datas[i]->blog == YES)
+            {
+                printf("%s", targetBlog[i]);
+                strcat(blog_linked, targetBlog[i]);
+                strcat(blog_linked, ", ");
+            }
+            else
+                printf("사용안함");
+            printf("\n");
+            if (datas[i]->mail == YES)
+            {
+                printf("%s", targetMail[i]);
+                strcat(mail_linked, targetMail[i]);
+                strcat(mail_linked, ", ");
+            }
+            else
+                printf("사용안함");
+            printf("\n\n");
+        }
+        printf("%s\n", blog_linked);
+        printf("%s\n", mail_linked);
+        for (int i = 0; i < 6; i++)
+        {
+            free(targetBlog[i]);
+            free(targetMail[i]);
+            free(datas[i]);
+        }
+        return 0;
+    }
+    ```
+![심화 2번 결과](https://user-images.githubusercontent.com/58128948/104462733-48ff3c80-55f4-11eb-9749-d14b9b327ec7.PNG)
+
+> char *str은 주소를 담고, char str[]은 값을 담는다. 구조체 멤버를 char *str로 선언하면 struct->str = "abc" 같은 방식으로 값을 줄 수 있는데, 이는 실제로는 "abc"의 주소값을 넘겨주는 식이다. 근데 이 경우 값이 수정이 안되며, 만약 다른 배열에서 값을 가져온 것일 경우 해당 배열의 값이 수정되면 이쪽도 수정이 된다.
