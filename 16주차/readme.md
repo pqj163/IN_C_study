@@ -9,32 +9,32 @@
 
 ### [⬆](#과제)기본 1번
 1. 문자열 편집을 위해 string.h 를 인클루드 하고 다음 문항에 답하시오. (3시간 소요)
+   
+        가. strchr 의 사용법은 아래와 같다.
 
-    가. strchr 의 사용법은 아래와 같다.
+            찾은문자및 이후의 텍스트 데이터 = strchr(문자열,찾을 문자)  
 
-        찾은문자및 이후의 텍스트 데이터 = strchr(문자열,찾을 문자)  
+            단, 문자가 찾아지지 않으면 NULL(0) 리턴.
+        
+        이를 암기하시오. 한편, 문자열 "dhflrhrlsiasia"를 변수로 선언하시오.
 
-        단, 문자가 찾아지지 않으면 NULL(0) 리턴.
-    
-    이를 암기하시오. 한편, 문자열 "dhflrhrlsiasia"를 변수로 선언하시오.
+        나. "dhflrhrlsiasia"에서 r 이 처음으로 나타난 이후의 모든 문자열을 출력하고자 한다.
 
-    나. "dhflrhrlsiasia"에서 r 이 처음으로 나타난 이후의 모든 문자열을 출력하고자 한다.
+            문자열에 dhflrhrlsiasia을 주고, 찾을 문자는 'r'로 주고 strchr을 이용한 뒤 결과를 출력하시오.
 
-        문자열에 dhflrhrlsiasia을 주고, 찾을 문자는 'r'로 주고 strchr을 이용한 뒤 결과를 출력하시오.
+        다. "dhflrhrlsiasia"에서 r 이 두번째로 나타난 이후의 모든 문자열을 출력하고자 한다. https://dojang.io/mod/page/view.php?id=369 를 참조하여, strchr을 이용한 뒤 결과를 출력하시오.
 
-    다. "dhflrhrlsiasia"에서 r 이 두번째로 나타난 이후의 모든 문자열을 출력하고자 한다. https://dojang.io/mod/page/view.php?id=369 를 참조하여, strchr을 이용한 뒤 결과를 출력하시오.
+        라. "dhflrhrlsiasia" 에서, h가 몇개나 들어있는지 구하고자 한다.
 
-    라. "dhflrhrlsiasia" 에서, h가 몇개나 들어있는지 구하고자 한다.
+        https://scvtwo.tistory.com/146 를 참조하여, h가 몇개 있는지 구하시오. 한편, while 문을 사용하시오. strchr를 이용하시오.
 
-    https://scvtwo.tistory.com/146 를 참조하여, h가 몇개 있는지 구하시오. 한편, while 문을 사용하시오. strchr를 이용하시오.
+        마. "dhflrhrlsiasia" 에서, s가 처음으로 등장하는 것이 몇번째인지 구하고자 한다.
 
-    마. "dhflrhrlsiasia" 에서, s가 처음으로 등장하는 것이 몇번째인지 구하고자 한다.
+        https://wwwwwwwwwwwww.tistory.com/102 를 참조하여, s가 몇번째에 처음으로 등장하는지 구하시오. 한편, while 문을 사용하시오. strchr를 이용하시오.
 
-    https://wwwwwwwwwwwww.tistory.com/102 를 참조하여, s가 몇번째에 처음으로 등장하는지 구하시오. 한편, while 문을 사용하시오. strchr를 이용하시오.
+        바. 나~마는 문자열의 앞에서부터 찾는다. 문자열의 뒤쪽부터 앞쪽으로 찾으려면 strrchr을 이용한다. 이를 암기하시오. 또한, 이를 이용하여 r이 마지막으로 나타난 이후의 모든 문자열을 출력하시오.
 
-    바. 나~마는 문자열의 앞에서부터 찾는다. 문자열의 뒤쪽부터 앞쪽으로 찾으려면 strrchr을 이용한다. 이를 암기하시오. 또한, 이를 이용하여 r이 마지막으로 나타난 이후의 모든 문자열을 출력하시오.
-
-    사. i가 마지막으로 등장하는 위치는 앞에서부터 몇번째인지 구하고 이를 출력하시오.
+        사. i가 마지막으로 등장하는 위치는 앞에서부터 몇번째인지 구하고 이를 출력하시오.
 
 ### [⬆](#과제)기본 2번
 2. strstr 의 사용법은 아래와 같다.
