@@ -62,8 +62,7 @@ int ask()
 
 void out(int (*fp)(), char *Data[])
 {
-    int y = 0, by = fp(), n,
-        ll = (by == YEAR) ? 4 : 2,
+    int y = 0, by = fp(), n, ll = 4,
         lr = (by == YEAR) ? 4 : 20;
     char find[10], *temp, *pt,
         *c = (by == YEAR) ? "," : "(",
@@ -78,7 +77,7 @@ void out(int (*fp)(), char *Data[])
     {
         do
         {
-            printf("%d글자 %s입력 : ", ll, co);
+            printf("%d글자 %s입력 : ", (by == YEAR) ? 4 : 2, co);
             scanf("%s", &find);
             n = strlen(find);
             y = (ll <= n && n <= lr) ? 1 : 0;
