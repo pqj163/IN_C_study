@@ -36,6 +36,39 @@
 
         사. i가 마지막으로 등장하는 위치는 앞에서부터 몇번째인지 구하고 이를 출력하시오.
 
+    ```C
+    #include <stdio.h>
+    #include <string.h>
+
+    int main()
+    {
+        char *var = "dhflrhrlsiasia",
+            *temp = strchr(var, 'r');
+        printf("%s\n", temp);
+        printf("%s\n", strchr(temp + 1, 'r'));
+
+        temp = strchr(var, 'h');
+        int h = 0;
+        while (temp != NULL)
+        {
+            h++;
+            temp = strchr(temp + 1, 'h');
+        }
+        printf("h개수 : %d\n", h);
+
+        printf("첫번째 s위치 : %d\n", strchr(var, 's') - var);
+
+        printf("%s\n", strrchr(var, 'r'));
+
+        printf("마지막 i위치 : %d\n", strrchr(var, 'i') - var);
+
+        return 0;
+    }
+    ```
+    > 처음에 컴파일이 안돼서 애먹었는데, 알고보니 ""로 문자를 입력하면 한글자만 적어도 널문자가 뒤에 붙어 문자열로 취급 된다고 한다. 그러니 변수를 ''로 넣어야 정상적으로 컴파일이 된다. 그래서 이와 같은 연유로, 문자임에도 %s를 쓰려면 ""로 문자를 넣어줘야 한다.   
+
+    ![기본 1번 결과](https://user-images.githubusercontent.com/58128948/105947778-13a32600-60ad-11eb-8697-86c39b4738de.PNG)
+
 ### [⬆](#과제)기본 2번
 2. strstr 의 사용법은 아래와 같다.
 
@@ -53,9 +86,36 @@
 
         라. 찾을 문자와 바꿀 문자의 크기가 같으면 strncpy를 이용하고, 그렇지 않으면 '다'처럼 부분삭제 후 새 문자열을 합쳐야 함을 확인하시오. dhflrhrlsiasia 을, dhflqnfrhrlWjqWjq 으로 바꾸기 위해, dhfl를 삭제 한 후, dhflqnf 을 앞에 추가한 뒤, siasia은 WjqWjq으로 바꾸어 보시오.
 
- 
+    ```C
+    #include <stdio.h>
+    #include <string.h>
 
- 
+    int main()
+    {
+        char var[] = "dhflrhrlsiasia";
+
+        printf("%s\n", strstr(var, "rhrl"));
+
+        strncpy(&var[strstr(var, "siasia") - var], "WjqWjq", 6);
+        printf("%s\n", var);
+
+        char *temp1 = strstr(var, "rhrl");
+        printf("%s\n", temp1);
+
+        char temp2[] = "ehowl";
+        printf("%s\n", strcat(temp2, temp1));
+
+        char temp3[] = "dhflqnf";
+        temp1 = "dhflrhrlsiasia";
+        strcat(temp3, strstr(temp1, "rhrl"));
+        strncpy(&temp3[strstr(temp3, "siasia") - temp3], "WjqWjq", 6);
+        printf("%s\n", temp3);
+
+        return 0;
+    }
+    ```
+
+    ![기본 2번 결과](https://user-images.githubusercontent.com/58128948/105980072-c5574c80-60d7-11eb-89c0-b6bfdce00048.PNG)
 
  
 
@@ -139,6 +199,9 @@
 
         아. 책이름 검색, 책목적 검색, 출판연도 검색 중 하나를 고른 후 값을 넣으면 그와 관련된 책이 나오도록 해보시오. 가~바를 재사용 하시오. 또한, 값이 찾아지지 않으면 '보유 서적이 아닙니다'를 출력하시오.
 
+    ![심화 1번 결과_1](https://user-images.githubusercontent.com/58128948/106002927-0447cb00-60f5-11eb-8328-989564ffb9e8.PNG)
+    ![심화 1번 결과_2](https://user-images.githubusercontent.com/58128948/106003160-453fdf80-60f5-11eb-94a6-14ad8d3423f6.PNG)
+    ![심화 1번 결과_3](https://user-images.githubusercontent.com/58128948/106003170-483ad000-60f5-11eb-941c-f13d673f20ad.PNG)
  
 
  
@@ -162,3 +225,67 @@
         라. 포함되어 있지 않다면 '욕이 없습니다'와 입력받은 문자열을 그대로 출력하고, 포함되어 있다면 '욕설을 하지 말아주세요'를 출력하고 입력받은 문자열은 출력하지 마시오.
 
         마. 욕설을 할 떄 마다 횟수를 세시오. 5번 이상 욕설을 하면 프로그램이 종료되도록 해보시오. Do while또는 while을 이용하시오.
+    
+    ```C
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+
+    void RemoveEnd(char *buf);
+    int main()
+    {
+        FILE *fp = fopen("work\\16주차\\욕목록.txt", "r");
+        char *lan[480];
+        for (int i = 0; i < 480; i++)
+        {
+            char *buf = (char *)malloc(40);
+            fgets(buf, 10, fp);
+            RemoveEnd(buf);
+            lan[i] = buf;
+        }
+        fclose(fp);
+
+        int count = 0, ch = 0;
+        char sc[50], *temp;
+        while (count < 5)
+        {
+            ch = 0;
+            printf("입력(멈추고 싶으면 '그만') : ");
+            scanf(" %[^\n]s", &sc);
+            if (strcmp(sc, "그만") == 0)
+                break;
+
+            for (int i = 0; i < 480; i++)
+            {
+                temp = strstr(sc, lan[i]);
+                while (temp != NULL)
+                {
+                    printf("욕설을 하지 말아주세요. 남은 경고 횟수 = %d\n", 4 - count);
+                    count += 1;
+                    ch = 1;
+                    temp = strstr(temp + 1, lan[i]);
+                }
+            }
+
+            if (ch == 0)
+                printf("욕이 없습니다\n");
+        }
+
+        for (int i = 0; i < 480; i++)
+            free(lan[i]);
+
+        return 0;
+    }
+
+    void RemoveEnd(char *buf)
+    {
+        int i = 0;
+        while (buf[i])
+        {
+            i++;
+        }
+
+        buf[i - 1] = '\0';
+    }
+    ```
+    ![심화 2번 결과](https://user-images.githubusercontent.com/58128948/106088531-7ce86f00-6169-11eb-8202-187abab9ca74.PNG)

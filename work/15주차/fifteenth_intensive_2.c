@@ -63,7 +63,7 @@ int main()
             strcat(blog_linked, ", ");
         }
         else
-            printf("»ç¿ë¾ÈÇÔ");
+            printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         printf("\n");
         if (datas[i]->mail == YES)
         {
@@ -72,7 +72,7 @@ int main()
             strcat(mail_linked, ", ");
         }
         else
-            printf("»ç¿ë¾ÈÇÔ");
+            printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         printf("\n\n");
     }
     printf("%s\n", blog_linked);
