@@ -1,5 +1,7 @@
 # C 스터디
 
+- [17주차 - strtok](https://github.com/pqj163/IN_C_study/blob/master/work/17%EC%A3%BC%EC%B0%A8/readme.md)  
+
 - [16주차 - strchr, strstr](https://github.com/pqj163/IN_C_study/blob/master/work/16%EC%A3%BC%EC%B0%A8/readme.md)  
   그외 strcat, strncpy, atoi, fopne, fgets, 공백 scanf
 
