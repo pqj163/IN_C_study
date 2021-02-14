@@ -1,6 +1,7 @@
 {
     "files.encoding": "euckr",
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "string.h": "c"
     }
 }
